@@ -89,28 +89,7 @@ namespace Certificate
 
         private void LoginForm_Activated(object sender, EventArgs e)
         {
-            
+        
         }
-
-       /* private void ex_Click(object sender, RoutedEventArgs e)
-        {
-            Microsoft.Office.Interop.Excel.Application ObjExcel = new Microsoft.Office.Interop.Excel.Application();
-            //Открываем книгу.                                                                                                                                                        
-            Microsoft.Office.Interop.Excel.Workbook ObjWorkBook = ObjExcel.Workbooks.Open(@"D:\Programs\Учеба\Olimp2018\olymp_fos_res\Ресурсы\Resourse.xlsx", 0, false, 5, "", "", false, Microsoft.Office.Interop.Excel.XlPlatform.xlWindows, "", true, false, 0, true, false, false);
-            //Выбираем таблицу(лист).
-            Microsoft.Office.Interop.Excel.Worksheet ObjWorkSheet;
-            ObjWorkSheet = (Microsoft.Office.Interop.Excel.Worksheet)ObjWorkBook.Sheets[1];
-
-            for (int i = 2; i < 1000; i++)
-            {
-                SqlCommand com = new SqlCommand("insert into BankOfQuestions values('" + ObjWorkSheet.Cells[i, 1].Text.Replace("'", "") + "', '" + ObjWorkSheet.Cells[i, 2].Text.Replace("'", "") + "', '" + ObjWorkSheet.Cells[i, 3].Text.Replace("'", "") + "','" + ObjWorkSheet.Cells[i, 4].Text.Replace("'", "") + "','" + ObjWorkSheet.Cells[i, 5].Text.Replace("'", "") + "','" + ObjWorkSheet.Cells[i, 6].Text.Replace("'", "") + "','" + ObjWorkSheet.Cells[i, 7].Text.Replace("'", "") + "','" + ObjWorkSheet.Cells[i, 8].Text.Replace("'", "") + "','" + ObjWorkSheet.Cells[i, 9].Text.Replace("'", "") + "','" + ObjWorkSheet.Cells[i, 10].Text.Replace("'", "") + "','" + ObjWorkSheet.Cells[i, 11].Text.Replace("'", "") + "','" + ObjWorkSheet.Cells[i, 12].Text.Replace("'", "") + "','" + ObjWorkSheet.Cells[i, 13].Text.Replace("'", "") + "','" + ObjWorkSheet.Cells[i, 14].Text.Replace("'", "") + "','" + ObjWorkSheet.Cells[i, 15].Text.Replace("'", "") + "','" + ObjWorkSheet.Cells[i, 16].Text.Replace("'", "") + "')", constr);
-                SqlDataAdapter a = new SqlDataAdapter(com);
-                DataTable d = new DataTable();
-                a.Fill(d);
-
-            }
-               
-            ObjExcel.Quit();
-        }*/
     }
 }
