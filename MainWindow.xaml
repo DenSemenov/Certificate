@@ -1,0 +1,13 @@
+﻿<Window x:Name="LoginForm" x:Class="Certificate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Программа тестирования" Height="1000" Width="1100" Loaded="LoginForm_Loaded" WindowStartupLocation="CenterScreen" Activated="LoginForm_Activated">
+    <Grid>
+        <Label Content="Для начала работы - пройдите авторизацию" HorizontalAlignment="Center" Margin="48,280,36,602" VerticalAlignment="Center" FontSize="48" Width="1008" Height="88"/>
+        <ComboBox x:Name="LoginBox" HorizontalAlignment="Center" Margin="212,316,212,403" VerticalAlignment="Center" Width="368" FontSize="24" BorderThickness="0" IsReadOnly="True" Height="51"/>
+        <PasswordBox x:Name="Password" HorizontalAlignment="Center" Margin="212,372,212,354" VerticalAlignment="Center" Width="368" FontSize="24" Height="44"/>
+        <Button Content="Вход" HorizontalAlignment="Center" Margin="212,425,474,307" VerticalAlignment="Center" Width="106" Height="38" FontSize="24" Click="Button_Click"/>
+        <Button Content="Регистрация" HorizontalAlignment="Center" Margin="432,425,212,307" VerticalAlignment="Center" Width="148" FontSize="24" Height="38" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

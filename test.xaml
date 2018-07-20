@@ -1,0 +1,29 @@
+﻿<Window x:Name="testForm" x:Class="Certificate.test"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Программа тестирования" Height="998" Width="1100" WindowStartupLocation="CenterScreen" Loaded="testForm_Loaded">
+    <Grid x:Name="grid">
+        <Label x:Name="TestName" Content="Label" Margin="0,87,0,827" VerticalAlignment="Center" FontSize="20" RenderTransformOrigin="0.5,0.5" TextOptions.TextHintingMode="Animated" HorizontalAlignment="Center" FontWeight="Bold">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="1" Y="2"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="End" Content="Завершить тест" HorizontalAlignment="Center" Margin="314,704,564,202" VerticalAlignment="Center" FontSize="24" Click="End_Click"/>
+        <Button x:Name="Next" Content="Далее" HorizontalAlignment="Center" Margin="623,704,254,202" VerticalAlignment="Center" FontSize="24" Click="Next_Click"/>
+        <RichTextBox x:Name="Question" HorizontalAlignment="Center" Height="76" Margin="222,174,222,718" VerticalAlignment="Center" Width="648" IsReadOnly="True" FontStretch="Expanded" FontSize="16" BorderBrush="{x:Null}" BorderThickness="0">
+            <FlowDocument FontSize="18" IsOptimalParagraphEnabled="True" Language="ru-ru" TextAlignment="Center">
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <StackPanel x:Name="checkBoxItems" HorizontalAlignment="Center" Height="412" Margin="222,271,222,285" VerticalAlignment="Center" Width="648"/>
+        <Label x:Name="TimeLabel" Content="" Margin="0,0,36,46" FontSize="24" HorizontalAlignment="Right" Width="326" Height="54" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="Certificate.EditUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Редактировать пользователя" Height="1000" Width="1100" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Content="Вернуться назад" Margin="0,0,24,18" FontSize="16" HorizontalAlignment="Right" Width="223" Height="38" VerticalAlignment="Bottom" Click="Button_Click"/>
+        <Label Content="Редактирование пользователя" HorizontalAlignment="Center" Margin="238,277,169,594" VerticalAlignment="Center" FontSize="48" Height="99" Width="685"/>
+        <Label Content="Логин" HorizontalAlignment="Center" Margin="337,381,659,525" VerticalAlignment="Center" FontSize="20" Height="64" Width="96"/>
+        <Label Content="Пароль" HorizontalAlignment="Center" Margin="324,449,659,464" VerticalAlignment="Center" FontSize="20" Height="57" Width="109"/>
+        <Label Content="Повторите пароль" HorizontalAlignment="Center" Margin="223,511,659,401" VerticalAlignment="Center" FontSize="20" Height="58" Width="210"/>
+        <Label Content="Имя" HorizontalAlignment="Center" Margin="354,577,659,335" VerticalAlignment="Center" FontSize="20" Height="58" Width="79"/>
+        <Label Content="Фамилия" HorizontalAlignment="Center" Margin="312,641,659,275" VerticalAlignment="Center" FontSize="20" Width="121" Height="54"/>
+        <TextBox x:Name="loginBox" HorizontalAlignment="Left" Height="38" Margin="438,381,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" FontSize="20"/>
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="438,449,0,0" VerticalAlignment="Top" Height="39" Width="262"/>
+        <PasswordBox x:Name="PasswordBox2" HorizontalAlignment="Left" Margin="438,511,0,0" VerticalAlignment="Top" Height="39" Width="262"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Height="38" Margin="438,577,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" FontSize="20"/>
+        <TextBox x:Name="Surname" HorizontalAlignment="Left" Height="38" Margin="438,641,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" FontSize="20"/>
+        <Button x:Name="ReadyButton" Content="Готово" HorizontalAlignment="Left" Margin="438,700,0,0" VerticalAlignment="Top" Width="117" FontSize="20" Click="ReadyButton_Click"/>
+        <Button x:Name="ClearButton" Content="Очистить" HorizontalAlignment="Left" Margin="584,700,0,0" VerticalAlignment="Top" Width="116" FontSize="20" Click="ClearButton_Click"/>
+
+    </Grid>
+</Window>
